@@ -3,18 +3,12 @@ h2 Sign up
 = simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: "form-horizontal"}) do |f|
   = f.error_notification
 
-  = f.input :email, required: true, autofocus: true
-  = error_span(resource[:email])
+  .form-inputs
+    = f.input :email, required: true, autofocus: true
+    = f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable)
+    = f.input :password_confirmation, required: true
 
-  = f.input :nickname, required: false
-  = error_span(resource[:nickname])
-
-  = f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @validatable)
-  = error_span(resource[:password])
-
-  = f.input :password_confirmation, required: true
-  = error_span(resource[:password_confirmation])
-
-  = f.button :submit, "Sign up", class: "btn btn-primary"
+  .form-actions
+    = f.button :submit, "Sign up", class: "btn btn-primary"
 
 = render "devise/shared/links"
