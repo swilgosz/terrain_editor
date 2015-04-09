@@ -1,6 +1,6 @@
 # terrain_editor
 
-##Using technologies
+##Used technologies
 
 * Ruby on rails 4.2
 
@@ -13,4 +13,8 @@
 * jQuery
 
 * Twitter bootstrap for rails
+
+##Dokumentation
+
+* All dokumentation is stored in folder "docs". Made in Latex
 

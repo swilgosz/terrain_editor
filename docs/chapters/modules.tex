@@ -1,0 +1,82 @@
+\chapter{Wykorzystywane moduły}
+\section{Devise}
+Devise to łatwy w użyciu i dostosowaniu do aplikacji moduł rozszerzający Ruby on Rails o proste zarządzanie sesjami. Gwarantuje bezpieczne przechowywanie haseł, kontrolę dostępu, kompletne funkcje logowania, rejestracji, powiadomień mailowych.
+
+\begin{itemize}
+\item Napisany jest w rubym
+\item Bazuje na silniku RoR, jest całkowicie oparte o strukturę MVC
+\item Pozwala na zalogowanie wielu modeli jednocześnie
+\item Bazuje na strukturze modułowej - można dołączać tylko te wtyczki, które rzeczywiście potrzebujemy
+\end{itemize}
+
+Devise składa się z 10 modułów:
+
+\begin{itemize}
+\item Database Authenticatable: koduje i zapisuje zakodowane hasła w bazie danych w celu zapewnienia autoryzacji podczas logowania.
+\item Omniauthable: dodaje kompatybilność z mediami społecznościowymi (logowanie przez Facebook, Twitter, Google itp). 
+\item Confirmable: wysyła email z potwierdzeniem rejestracji i weryfikuje czy konto jest potwierdzone czy nie.
+\item Recoverable: umożliwia resetowanie haseł i wysyła email z instrukcją zresetowania hasła.
+\item Registerable: zajmuje się tworzeniem kont użytkowników, także edycji ich profilów i usuwaniem swoich kont. Nie pozwala na edycję innych kont ani na usunięcie nie swojego konta, umożliwia automatyczne zalogowanie po rejestracji
+Rememberable: umożliwia zapamiętanie sesji użytkownika w cookies, dzięki czemu pozostaje on zalogowany nawet po zamknięciu przeglądarki.
+Trackable: śledzi ilość logowań, adresy IP, rodzaj przeglądarki z której się logowano.
+Timeoutable: wylogowuje użytkownika po określonym czasie, jeśli nie stwierdzono żadnej aktywności.
+Validatable: dostarcza walidację adresów email oraz haseł. Sprawdza długość hasła, poprawność formatu wprowadzonego adresu email. Jest to opcjonalne i nie przeszkadza w definiowaniu własnych walidacji.
+Lockable: blokuje konto po określonej ilości błędnych logowań. Można odblokować konto przez token wysłany na adres email lub po określonym czasie.
+
+\end{itemize}
+
+Devise gwarantuje przechwytywanie przechwytywanie wyjątków, zapewniając bezpieczeństwo oraz generowanie czytelnych komunikatów we wszystkich możliwych przypadkach użycia.
+
+
+W naszej aplikacji będziemy wykorzystywać następujące moduły devise:
+
+\begin{itemize}
+\item database authenticatable
+\item registerable
+\item recoverable
+\item rememberable
+\item trackable
+\item :validatable
+\end{itemize}
+
+\section{ActAsTaggableOn}
+ActAsTaggable - to moduł wykorzystywany przez nas do grupowania map oraz użytkowników. Wtyczka ta umożliwia szybkie dodanie funkcji otagowania dowolnego modelu, filtrowanie po tagach, dodawanie wielu tagów jednocześnie czy wyświetlania powiązanej chmury tagów.
+
+Dodatkowe funkcje zapeniane przez ten moduł, to znajdowanie najczęściej i narzadziej używanych tagów, powiązanie wielu rodzajów tagów z jednym modelem (np: tagi jako kategorie, grupy, szkoły - wszystko może być powiązane z modelem użytkownika)
+
+\section{CanCanCan}
+
+CanCanCan to biblioteka do autoryzacji dla Ruby on Rails. Pozwala określić, do jakich zasobów aktualnie zalogowany użytkownik ma dostęp. Wszystkie prawa dostępu są zdefiniowane w pojedynczej lokalizacji (klasie Ability) i nie są powtarzane w kontrolerach, widokach czy zapytaniach do bazy danych.
+
+\section{PG}
+
+Wykorzystywana przez nas baza danych to postgreSQL - wybraliśmy ją, ponieważ serwer Heroku, na którym hostujemy naszą aplikację wykorzystuje tę bazę jako domyślną, co uprościło konfigurację.
+
+Ruby on Rails to framework zaprojektowany do współpracy z bazą danych. Klasa ActiveRecord zawiera zdefiniowany komplet funkcji komunikującej się z bazą, tworzeniem, edycją, czytaniem i usuwaniem rekordów. Jedyne, czego potrzebujemy, by sprawić, by komunikacja z bazą zaczęła działać, to dodanie modułu precyzującego, jaką bazę nasza aplikacja będzie wykorzystywać.
+
+PG - to interfejs dla Ruby umożliwiający współpracę z bazą danych PostgreSql.
+
+\section{Uproszczona składnia}
+Aby przyśpieszyć pracę nad aplikacją i ułatwić zarządzanie stylami/skryptami, dzieląc je na wiele plików postanowiliśmy nie wykorzystywać bogatych w niepotrzebne znaki standardowych składni aplikacji webowych. Zainteresowaliśmy się nakładkami na wykorzystywane przez nas języki (HTML, CSS, JavaScript), które po wrzuceniu na serwer produkcyjny są komplikowane i łączone w pojedyncze pliki, by nie generować dziesiątek requestów do serwera.
+
+\begin{itemize}
+	\item Slim-Rails - jest to interpreter języka Slim, nakładki na HTML pozwalającej na pominięcie wszystkich tagów zamykających, bazujący na wcięciach (podobnie do składni Python'a).
+\item Coffe-Rails - interpreter języka CoffeeScript będącego udoskonaleniem składni JavaScript. Opiera się na tych samych założeniach co Slim czy Sass.
+\item Sass-Rails - interpreter języka Sass, będącego nakładką na standardową składnię CSS, usuwający wszelkie nawiasy klamrowe, średniki, umożliwiający definiowanie zagnieżdżonych styli, wprowadzenia zmiennych, czy działań matematycznych.
+\item Uglifier - kompressor do assets. Umożliwia minimalizację kompresję plików *.coffee oraz *.sass do zminimalizowanych odpowiedników *.js oraz *.css. Dzięki temu usunięte sa wszystkie białe znaki, a nazwy funkcji zamieniane są na jednoliterowe.
+\item Less-Rails - łączy wszystkie pliki assets w jeden, dzieki czemu do serwera idzie jeden request zamiast osobnego requesta na każdy plik ze stylami czy skryptem.
+\end{itemize}
+
+\section{TwitterBootstrapRails}
+Ta wtyczka umożliwia integrację naszej aplikacji z jednym z najbardziej znanych frameworków frontendowym wyekstraktowanym z Twittera - Bootstrapem.
+
+\section{SimpleForm}
+Dodatek umożliwjający łatwe generowanie skomplikowanych formularzy HTML dla dowolnego obiektu.
+
+\section{TurboLinks}
+By uniknąć pobierania z serwera skryptób javaScript oraz styli CSS za każdym razem, gdy użytkownik kliknie w link na stronie, używamy turbo linków. Pozwalają one na odświeżenie wyłącznie kodu zawartego między tagami <body></body>, zaś cała sekcja <head></head> jest ładowana tylko raz.
+
+Dzięki temu zabiegowi nasza aplikacja ładuje się wielokrotnie szybciej.
+
+\section{gravastic}
+Moduł pozwalający na wyświetlania Gravatarów użytkowników oraz komentujących mapy, bazujac na emailu podanym w formularzu.

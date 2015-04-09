@@ -1,0 +1,76 @@
+\documentclass[10pt]{report}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0,5em}
+\usepackage[margin=1in, paperwidth=8.5in, paperheight=11in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{polski}
+\usepackage[polish]{babel}
+\usepackage{lmodern}
+\usepackage{multirow}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{courier}
+\usepackage{listings}
+\usepackage{color}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codeorange}{rgb}{1,0.54,0}
+\lstdefinestyle{CppStyle}{
+  belowcaptionskip=1\baselineskip,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b, 
+  frame=below,
+  aboveskip=20pt,
+  belowskip = 10pt,
+  language=C++,
+  showstringspaces=false,
+  showspaces=false,
+  numbersep=5pt,
+  numbers=left,  
+  numberstyle=\small,
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  stringstyle=\color{codeorange},
+  basicstyle=\small\ttfamily,
+}
+\lstset{escapechar=@,style=CppStyle}
+
+\title{Projekt na zajęcia e-systemów Java}
+\author{
+        Sebastian Wilgosz (195963)\\
+        Radosław Skiba() }
+
+\makeatletter
+\renewcommand{\maketitle}{
+\begin{titlepage}
+    \begin{center}
+        \vspace*{2,5cm} 
+        \LARGE\textbf{Edytor map 3D}\par
+        \vspace {10mm}
+        \large\textbf{\@title}\par
+        \vspace{5cm}
+    
+    	\large\textit{\@author}\par   	  		
+    	\vspace {10mm}
+    	
+    	\large\textit{Termin zajęć:}
+    	\large\textit{Czwartek, godz. 17:05}\par
+    	\large\textit{Prowadzący:}
+       	\large\textbf{dr inż. Tomasz Walkowak}\par
+        \vspace{3cm}
+        \small \@date
+    \end{center}
+\end{titlepage}
+}
+\makeatother
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\input{chapters/modules.tex}
+
+\end{document}
