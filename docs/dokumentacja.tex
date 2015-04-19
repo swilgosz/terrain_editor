@@ -65,12 +65,28 @@
 \end{titlepage}
 }
 \makeatother
+% Pakiety uzywane przez INTRO CHAPTER
+\usepackage{framed} 
+\newcounter{boxCount}
+\stepcounter{boxCount}
+\newcommand{\boxy}[2]
+{
+
+\begin{framed}
+\bf{\arabic{boxCount}. #1 :}
+\definecolor{shadecolor}{gray}{.85} % Light Grey
+\begin{shaded}
+\textnormal{-- #2}
+\end{shaded}
+\end{framed}
+\stepcounter{boxCount}
+}
 
 \begin{document}
 \maketitle
 \tableofcontents
 \newpage
-
+\input{chapters/intro.tex}
 \input{chapters/modules.tex}
 
 \end{document}

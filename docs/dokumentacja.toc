@@ -1,11 +1,18 @@
 \select@language {polish}
-\contentsline {chapter}{\numberline {1}Wykorzystywane modu\IeC {\l }y}{2}
-\contentsline {section}{\numberline {1.1}Devise}{2}
-\contentsline {section}{\numberline {1.2}ActAsTaggableOn}{3}
-\contentsline {section}{\numberline {1.3}CanCanCan}{3}
-\contentsline {section}{\numberline {1.4}PG}{3}
-\contentsline {section}{\numberline {1.5}Uproszczona sk\IeC {\l }adnia}{3}
-\contentsline {section}{\numberline {1.6}TwitterBootstrapRails}{4}
-\contentsline {section}{\numberline {1.7}SimpleForm}{4}
-\contentsline {section}{\numberline {1.8}TurboLinks}{4}
-\contentsline {section}{\numberline {1.9}gravastic}{4}
+\contentsline {chapter}{\numberline {1}Cel i zakres projektu}{2}
+\contentsline {section}{\numberline {1.1}Zakres projektu}{2}
+\contentsline {section}{\numberline {1.2}Cel projektu}{2}
+\contentsline {chapter}{\numberline {2}Analiza i Specyfikacja}{3}
+\contentsline {section}{\numberline {2.1}Opis s\IeC {\l }owny zadania}{3}
+\contentsline {section}{\numberline {2.2}Specyfikacja wymaga\IeC {\'n} funkcjonalnych}{3}
+\contentsline {section}{\numberline {2.3}Specyfikacja wymaga\IeC {\'n} niefunkcjonalnych}{5}
+\contentsline {chapter}{\numberline {3}Wykorzystywane modu\IeC {\l }y}{7}
+\contentsline {section}{\numberline {3.1}Devise}{7}
+\contentsline {section}{\numberline {3.2}ActAsTaggableOn}{8}
+\contentsline {section}{\numberline {3.3}CanCanCan}{8}
+\contentsline {section}{\numberline {3.4}PG}{8}
+\contentsline {section}{\numberline {3.5}Uproszczona sk\IeC {\l }adnia}{8}
+\contentsline {section}{\numberline {3.6}TwitterBootstrapRails}{9}
+\contentsline {section}{\numberline {3.7}SimpleForm}{9}
+\contentsline {section}{\numberline {3.8}TurboLinks}{9}
+\contentsline {section}{\numberline {3.9}gravastic}{9}
