@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.13)  19 APR 2015 13:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.13)  19 APR 2015 18:06
 entering extended mode
 **dokumentacja.tex
 (D:\Develop\Projekty\WebDev\eJava\terrain_editor\docs\dokumentacja.tex
@@ -524,36 +524,36 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 {C:/Users/Dexax/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (D:\Develop\Projekty\WebDev\eJava\terrain_editor\docs\dokumentacja.toc
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 2.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 3.
 
 (D:\Editors\TeX\tex\latex\lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 2.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 3.
  (D:\Editors\TeX\tex\latex\lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 2.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 3.
 (D:\Editors\TeX\tex\latex\lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 2.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 3.
 
 (D:\Editors\TeX\tex\latex\lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 2.
+(Font)              <10> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 2.
+(Font)              <7> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 2.
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+(Font)              <5> on input line 3.
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 
 (D:\Editors\TeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (D:\Editors\TeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -582,16 +582,28 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 6.
  [7
 
-] [8]) [9]
+] [8])
+(D:\Develop\Projekty\WebDev\eJava\terrain_editor\docs\chapters/erd.tex [9]
+Rozdzia\l  4.
+<img/ERDJava.png, id=41, 712.16063pt x 505.89pt>
+File: img/ERDJava.png Graphic file (type png)
+ <use img/ERDJava.png>
+Package pdftex.def Info: img/ERDJava.png used on input line 6.
+(pdftex.def)             Requested size: 605.3394pt x 430.00851pt.
+)
+[10
+
+] [11 <D:/Develop/Projekty/WebDev/eJava/terrain_editor/docs/img/ERDJava.png (PN
+G copy)>]
 (D:\Develop\Projekty\WebDev\eJava\terrain_editor\docs\dokumentacja.aux) ) 
 Here is how much of TeX's memory you used:
- 4510 strings out of 493921
- 60082 string characters out of 3152494
+ 4520 strings out of 493921
+ 60321 string characters out of 3152494
  150374 words of memory out of 3000000
- 7688 multiletter control sequences out of 15000+200000
+ 7692 multiletter control sequences out of 15000+200000
  68469 words of font info for 47 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 37i,6n,65p,518b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,9n,65p,518b,252s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Ed
 itors/TeX/fonts/enc/dvips/lm/lm-mathsy.enc}{D:/Editors/TeX/fonts/enc/dvips/lm/l
 m-ec.enc}<D:/Editors/TeX/fonts/type1/public/lm/lmbx10.pfb><D:/Editors/TeX/fonts
@@ -600,9 +612,9 @@ D:/Editors/TeX/fonts/type1/public/lm/lmr10.pfb><D:/Editors/TeX/fonts/type1/publ
 ic/lm/lmr9.pfb><D:/Editors/TeX/fonts/type1/public/lm/lmri10.pfb><D:/Editors/TeX
 /fonts/type1/public/lm/lmri12.pfb><D:/Editors/TeX/fonts/type1/public/lm/lmsy10.
 pfb>
-Output written on dokumentacja.pdf (10 pages, 194095 bytes).
+Output written on dokumentacja.pdf (12 pages, 270600 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
+ 76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
