@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.13)  19 APR 2015 18:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.13)  19 APR 2015 19:40
 entering extended mode
 **dokumentacja.tex
 (D:\Develop\Projekty\WebDev\eJava\terrain_editor\docs\dokumentacja.tex
@@ -590,20 +590,26 @@ File: img/ERDJava.png Graphic file (type png)
  <use img/ERDJava.png>
 Package pdftex.def Info: img/ERDJava.png used on input line 6.
 (pdftex.def)             Requested size: 605.3394pt x 430.00851pt.
-)
-[10
+
+<img/info.jpg, id=42, 578.16pt x 1098.504pt>
+File: img/info.jpg Graphic file (type jpg)
+ <use img/info.jpg>
+Package pdftex.def Info: img/info.jpg used on input line 13.
+(pdftex.def)             Requested size: 422.77669pt x 611.40341pt.
+) [10
 
 ] [11 <D:/Develop/Projekty/WebDev/eJava/terrain_editor/docs/img/ERDJava.png (PN
 G copy)>]
+[12 <D:/Develop/Projekty/WebDev/eJava/terrain_editor/docs/img/info.jpg>]
 (D:\Develop\Projekty\WebDev\eJava\terrain_editor\docs\dokumentacja.aux) ) 
 Here is how much of TeX's memory you used:
- 4520 strings out of 493921
- 60321 string characters out of 3152494
+ 4526 strings out of 493921
+ 60400 string characters out of 3152494
  150374 words of memory out of 3000000
- 7692 multiletter control sequences out of 15000+200000
+ 7696 multiletter control sequences out of 15000+200000
  68469 words of font info for 47 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 37i,9n,65p,518b,252s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,9n,65p,518b,302s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Ed
 itors/TeX/fonts/enc/dvips/lm/lm-mathsy.enc}{D:/Editors/TeX/fonts/enc/dvips/lm/l
 m-ec.enc}<D:/Editors/TeX/fonts/type1/public/lm/lmbx10.pfb><D:/Editors/TeX/fonts
@@ -612,9 +618,9 @@ D:/Editors/TeX/fonts/type1/public/lm/lmr10.pfb><D:/Editors/TeX/fonts/type1/publ
 ic/lm/lmr9.pfb><D:/Editors/TeX/fonts/type1/public/lm/lmri10.pfb><D:/Editors/TeX
 /fonts/type1/public/lm/lmri12.pfb><D:/Editors/TeX/fonts/type1/public/lm/lmsy10.
 pfb>
-Output written on dokumentacja.pdf (12 pages, 270600 bytes).
+Output written on dokumentacja.pdf (13 pages, 414938 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 81 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

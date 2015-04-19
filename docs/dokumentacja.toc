@@ -18,3 +18,4 @@
 \contentsline {section}{\numberline {3.9}gravastic}{9}
 \contentsline {chapter}{\numberline {4}Modele system\IeC {\'o}w}{10}
 \contentsline {section}{\numberline {4.1}Diagram ERD}{10}
+\contentsline {section}{\numberline {4.2}Wizualny diagram modu\IeC {\l }\IeC {\'o}w}{10}
