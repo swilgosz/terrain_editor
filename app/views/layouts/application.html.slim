@@ -29,15 +29,7 @@ html lang="en"
 
         = link_to "HOME", root_url, class: "navbar-brand"
         .navbar-collapse.collapse.navbar-responsive-collapse
-          ul.nav.navbar-nav
-            li= link_to "About", about_path
-            li= link_to "Contact", contact_path
-            - if current_user
-              li= link_to "Logout", destroy_user_session_path, method: :delete
-            - else
-              li= link_to "Sign in", new_user_session_path
-              li= link_to "Sign up", new_user_registration_path
-
+          = render "layouts/main_nav", additional_class: "navbar-nav"
     .container
       .row
         .col-lg-9
@@ -46,10 +38,7 @@ html lang="en"
         .col-lg-3
           .well.sidebar-nav
             h3 Sidebar
-            ul.nav.nav-list
-              li= link_to "About", about_path
-              li= link_to "Contact", contact_path
-              li= link_to "My Profile", current_user if current_user.present?
+            = render "layouts/main_nav", additional_class: "nav-list"
 
       footer
         p &copy; Sebastian Wilgosz & Radosław Skiba

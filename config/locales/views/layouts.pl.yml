@@ -1,0 +1,8 @@
+pl:
+  layouts:
+    main_nav:
+      about: "O projekcie"
+      contact: "Kontakt"
+      logout: "Wyloguj"
+      sign_in: "Zaloguj"
+      sign_up: "Zarejestruj"
