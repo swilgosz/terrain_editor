@@ -29,3 +29,8 @@
         rails server
 
 Now your project will be available on localhost:3000
+
+
+## Example
+
+Production version of the application is hosted on heroku: [http://terrain-editor.herokuapp.com][http://terrain-editor.herokuapp.com]
