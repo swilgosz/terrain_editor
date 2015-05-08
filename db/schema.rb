@@ -11,7 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150321180041) do
+ActiveRecord::Schema.define(version: 20150508174132) do
+
+  create_table "edges", force: :cascade do |t|
+    t.integer  "source_id"
+    t.integer  "target_id"
+    t.integer  "map_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "edges", ["map_id"], name: "index_edges_on_map_id"
+
+  create_table "maps", force: :cascade do |t|
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "name"
+  end
+
+  add_index "maps", ["user_id"], name: "index_maps_on_user_id"
+
+  create_table "points", force: :cascade do |t|
+    t.float    "x"
+    t.float    "y"
+    t.float    "z"
+    t.integer  "map_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "points", ["map_id"], name: "index_points_on_map_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "nickname"

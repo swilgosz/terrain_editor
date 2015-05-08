@@ -1,0 +1,14 @@
+p#notice = notice
+
+#map-wrapper data-id==@map.id
+  .header
+    p
+      strong User:
+      = @map.user
+
+  .content
+
+  .footer
+  = link_to 'Edit', edit_map_path(@map)
+  '|
+  / = link_to 'Back', maps_path
