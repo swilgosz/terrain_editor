@@ -1,6 +1,9 @@
-h1 Welcome#contact
-p Find me in app/views/welcome/contact.html.slim
-
-br
-
-p Here will be our contact form which will send messages directly to the email.
+/ Contact Us
+section#contact
+  .container
+    .row.margint20.marginb40
+      h1.page-title.marginb20 = t(".title")
+      hr.tall
+      .col-md-8.center
+        = render "shared/flash"
+        = render "shared/contact_form"

@@ -2,9 +2,10 @@ p#notice = notice
 
 #map-wrapper data-id==@map.id
   .header
+    h3 = @map.name
     p
-      strong User:
-      = @map.user
+      strong Made by:
+      = " #{ @map.user }"
 
   .content
 

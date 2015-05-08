@@ -1,0 +1,31 @@
+pl:
+  activemodel:
+    models:
+      contact_message: "Wiadomość Kontaktowa"
+    errors:
+      models:
+        contact_message:
+          attributes:
+            content:
+              blank: "Nie można wysłać pustej wiadomości."
+            email:
+              blank: "Podaj swój adres email."
+              invalid: "Podany email jest nieprawidłowy."
+            name:
+              blank: "Podaj swoje imię i nazwisko."
+            subject:
+              blank: "Wybierz temat wiadomości."  #Models
+  notifications:
+    notices:
+      contact_messages:
+        sent: "Twoja wiadomość została wysłana. Odpowiemy najszybciej, jak to możliwe."
+    alerts:
+      contact_messages:
+        invalid: "Pojawiły się błędy w formularzu. Sprawdź pola poniżej."
+
+  welcome:
+    contact:
+      title: "Skontaktuj się z nami"
+  shared:
+    contact_form:
+      submit: "Wyślij"

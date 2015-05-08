@@ -1,0 +1,7 @@
+pl:
+  shared:
+    contact_form:
+      email_address: "Adres email"
+      full_name: "Imię i nazwisko"
+      message: "Wiadomość"
+      subject: "Temat"
