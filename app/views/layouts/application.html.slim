@@ -26,8 +26,9 @@ html lang="en"
           span.icon-bar
           span.icon-bar
           span.icon-bar
-
-        = link_to "HOME", root_url, class: "navbar-brand"
+        
+        = link_to image_tag("small.png", height: '32') , root_url, class: "navbar-brand"
+          
         .navbar-collapse.collapse.navbar-responsive-collapse
           = render "layouts/main_nav", additional_class: "navbar-nav"
     .container
@@ -36,9 +37,9 @@ html lang="en"
           = bootstrap_flash
           = yield
         .col-lg-3
-          .well.sidebar-nav
-            h3 Sidebar
-            = render "layouts/main_nav", additional_class: "nav-list"
+          / .well.sidebar-nav
+          /   h3 Sidebar
+          /   = render "layouts/main_nav", additional_class: "nav-list"
 
       footer
         p &copy; Sebastian Wilgosz & Radosław Skiba
